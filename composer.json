@@ -1,0 +1,20 @@
+{
+    "name": "amogh/guvi-auth-app",
+    "description": "GUVI Internship Authentication System",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Amogh\\GuviAuthApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amogh-008",
+            "email": "amoghgaur2004@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^2.3",
+        "predis/predis": "^3.5"
+    }
+}

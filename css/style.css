@@ -1,0 +1,354 @@
+:root{
+    --primary:#00ff88;
+    --primary-dark:#00cc6a;
+
+    --bg:#05080d;
+    --card:rgba(17,24,39,.92);
+
+    --white:#ffffff;
+    --muted:#b8c1cc;
+
+    --danger:#ff4d4d;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    -45deg,
+    #05080d,
+    #08111d,
+    #0d1726,
+    #08111d
+    );
+
+    background-size:
+    400% 400%;
+
+    animation:
+    gradientBG 15s ease infinite;
+
+    color:white;
+
+    font-family:
+    "Segoe UI",
+    sans-serif;
+}
+
+@keyframes gradientBG{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+.navbar{
+
+    background:
+    rgba(5,8,13,.92);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-bottom:
+    1px solid rgba(
+    0,255,136,.12);
+
+    box-shadow:
+    0 0 25px rgba(
+    0,255,136,.08);
+}
+
+.navbar-brand{
+
+    color:var(--primary)!important;
+
+    font-weight:800;
+
+    font-size:2rem;
+
+    letter-spacing:.5px;
+
+    text-shadow:
+    0 0 15px rgba(
+    0,255,136,.6);
+}
+
+.page-title{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    color:white;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#c0c7d1;
+
+    font-size:1.15rem;
+}
+
+.custom-card{
+
+    background:
+    rgba(17,24,39,.88);
+
+    backdrop-filter:
+    blur(25px);
+
+    border:
+    1px solid rgba(
+    255,255,255,.05);
+
+    border-radius:24px;
+
+    transition:
+    all .35s ease;
+
+    box-shadow:
+    0 8px 32px rgba(
+    0,0,0,.45),
+    0 0 20px rgba(
+    0,255,136,.08);
+}
+
+.custom-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 15px 45px rgba(
+    0,0,0,.5),
+
+    0 0 30px rgba(
+    0,255,136,.18);
+}
+
+.custom-card h1,
+.custom-card h2,
+.custom-card h3,
+.custom-card h4,
+.custom-card h5,
+.custom-card h6{
+
+    color:white !important;
+}
+
+.custom-card p{
+
+    color:#d1d5db;
+}
+
+label{
+
+    color:white;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+}
+
+.form-control{
+
+    background:
+    rgba(255,255,255,.03);
+
+    border:
+    1px solid rgba(
+    255,255,255,.08);
+
+    color:white;
+
+    border-radius:14px;
+
+    padding:14px 16px;
+}
+
+.form-control:focus{
+
+    background:
+    rgba(255,255,255,.05);
+
+    color:white;
+
+    border-color:
+    var(--primary);
+
+    box-shadow:
+    0 0 18px rgba(
+    0,255,136,.35);
+}
+
+.form-control::placeholder{
+
+    color:#8f98a3;
+}
+
+.btn-primary,
+.btn-success{
+
+    background:
+    linear-gradient(
+    135deg,
+    #00ff88,
+    #00cc6a
+    );
+
+    border:none;
+
+    color:black;
+
+    font-weight:700;
+
+    border-radius:14px;
+
+    padding:12px;
+
+    transition:
+    .3s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover{
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    0 0 25px rgba(
+    0,255,136,.5);
+}
+
+.btn-outline-success{
+
+    border:
+    1px solid var(--primary);
+
+    color:var(--primary);
+
+    border-radius:14px;
+}
+
+.btn-outline-success:hover{
+
+    background:
+    var(--primary);
+
+    color:black;
+
+    box-shadow:
+    0 0 20px rgba(
+    0,255,136,.4);
+}
+
+.alert{
+
+    border:none;
+
+    border-radius:14px;
+
+    font-weight:600;
+}
+
+.alert-success{
+
+    background:
+    rgba(0,255,136,.15);
+
+    color:#00ff88;
+}
+
+.alert-danger{
+
+    background:
+    rgba(255,77,77,.15);
+
+    color:#ff6b6b;
+}
+
+.progress{
+
+    height:16px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.08);
+}
+
+.progress-bar{
+
+    background:
+    linear-gradient(
+    135deg,
+    #00ff88,
+    #00cc6a
+    );
+
+    font-weight:700;
+}
+
+.badge{
+
+    font-size:.9rem;
+
+    padding:8px 12px;
+}
+
+.text-success{
+
+    color:#00ff88 !important;
+}
+
+.spinner-border{
+
+    width:3rem;
+    height:3rem;
+}
+
+footer{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    padding-bottom:30px;
+
+    color:#9ca3af;
+}
+
+.profile-card{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.login-card,
+.register-card{
+
+    max-width:550px;
+
+    margin:auto;
+}
